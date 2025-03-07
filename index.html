@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">🍕 Pizza Palace</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#order">Order Online</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#order" class="btn-order">Order Now</a>
+        </nav>
+
+        <div class="hero-section">
+            <h1>Taste the Best Pizza in Town!</h1>
+            <p>Fresh ingredients, made with love.</p>
+            <a href="#menu" class="btn-cta">See Menu</a>
+        </div>
+    </header>
+
+        <!-- Featured Pizzas Section -->
+        <section class="featured-pizzas" id="order">
+            <h2>Our Bestselling Pizzas</h2>
+            <div class="pizzas-grid">
+                <!-- Pizza Item 1 -->
+                <div class="pizza-item">
+                    <img src="images/p4.jpg" alt="Pepperoni Pizza">
+                    <h3>Pepperoni Delight</h3>
+                    <p>A classic pizza topped with delicious pepperoni and mozzarella cheese.</p>
+                    <span class="price">$12.99</span>
+                    <a href="#" class="btn-order">Order Now</a>
+                </div>
+                <!-- Pizza Item 2 -->
+                <div class="pizza-item">
+                    <img src="images/p5.jpg" alt="Veggie Pizza">
+                    <h3>Veggie Supreme</h3>
+                    <p>Loaded with fresh vegetables and topped with a rich tomato sauce.</p>
+                    <span class="price">$10.99</span>
+                    <a href="#" class="btn-order">Order Now</a>
+                </div>
+                <!-- Pizza Item 3 -->
+                <div class="pizza-item">
+                    <img src="images/p7.jpg" alt="BBQ Chicken Pizza">
+                    <h3>BBQ Chicken</h3>
+                    <p>Grilled chicken with BBQ sauce, onions, and a blend of cheeses.</p>
+                    <span class="price">$13.99</span>
+                    <a href="#" class="btn-order">Order Now</a>
+                </div>
+                <!-- Pizza Item 4 -->
+                <div class="pizza-item">
+                    <img src="images/p9.jpg" alt="Margherita Pizza">
+                    <h3>Margherita Classic</h3>
+                    <p>A simple yet flavorful pizza with fresh tomatoes, basil, and mozzarella.</p>
+                    <span class="price">$9.99</span>
+                    <a href="#" class="btn-order">Order Now</a>
+                </div>
+            </div>
+        </section>
+
+            <!-- Special Offers Section -->
+    <section class="special-offers">
+        <h2>Special Offers</h2>
+        <div class="offers-grid">
+            <!-- Offer 1 -->
+            <div class="offer-item">
+                <h3>Buy 1 Get 1 Free</h3>
+                <p>Enjoy a free pizza with every large pizza you order!</p>
+                <a href="#" class="btn-claim">Claim Offer</a>
+            </div>
+            <!-- Offer 2 -->
+            <div class="offer-item">
+                <h3>20% Off on First Order</h3>
+                <p>Get 20% off your first online order. Use code: FIRST20</p>
+                <a href="#" class="btn-claim">Claim Offer</a>
+            </div>
+            <!-- Offer 3 -->
+            <div class="offer-item">
+                <h3>Free Delivery Weekend</h3>
+                <p>Order this weekend and enjoy free delivery on all orders!</p>
+                <a href="#" class="btn-claim">Claim Offer</a>
+            </div>
+        </div>
+    </section>
+
+        <!-- About Us Section -->
+        <section class="about-us" id="about">
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>At <strong>Pizza Palace</strong>, we believe in delivering the finest pizza experience in town. Every pizza is handcrafted with the freshest ingredients, a blend of authentic Italian flavors, and a touch of love. Our mission is to bring people together with every slice.</p>
+                <p>With over 10 years of experience in the pizza business, we are passionate about delivering more than just food – we offer a memorable dining experience. Whether you’re dining in, taking out, or ordering online, Pizza Palace promises to satisfy your pizza cravings.</p>
+                <a href="#contact" class="btn-learn-more">Learn More</a>
+            </div>
+        </section>
+
+            <!-- Customer Reviews Section -->
+    <section class="customer-reviews" id="reviews">
+        <h2>What Our Customers Say</h2>
+        <div class="reviews-container">
+            <!-- Review 1 -->
+            <div class="review-item">
+                <p class="review-text">"The best pizza I’ve ever had! The crust is crispy, the sauce is perfectly seasoned, and the toppings are fresh. Will definitely order again!"</p>
+                <span class="customer-name">- John Doe</span>
+            </div>
+            <!-- Review 2 -->
+            <div class="review-item">
+                <p class="review-text">"I’m a pizza lover, and Pizza Palace never disappoints. Great service, amazing flavors, and fast delivery. Highly recommend!"</p>
+                <span class="customer-name">- Sarah Smith</span>
+            </div>
+            <!-- Review 3 -->
+            <div class="review-item">
+                <p class="review-text">"We ordered for a family gathering, and everyone loved the pizza. The Margherita and BBQ Chicken pizzas were a hit!"</p>
+                <span class="customer-name">- Emily Johnson</span>
+            </div>
+        </div>
+    </section>
+
+        <!-- Interactive Menu Section -->
+        <section class="menu-section" id="menu">
+            <h2>Explore Our Delicious Menu</h2>
+            <div class="menu-categories">
+                <button class="category-btn active" onclick="showCategory('all')">All</button>
+                <button class="category-btn" onclick="showCategory('veg')">Veg Pizzas</button>
+                <button class="category-btn" onclick="showCategory('nonveg')">Non-Veg Pizzas</button>
+                <button class="category-btn" onclick="showCategory('special')">Special Pizzas</button>
+            </div>
+    
+            <div class="menu-items">
+                <!-- Veg Pizza Item -->
+                <div class="menu-item veg">
+                    <img src="images/p9.jpg" alt="Margherita Pizza">
+                    <h3>Margherita Pizza</h3>
+                    <p>A simple yet delicious pizza with fresh tomatoes, basil, and mozzarella.</p>
+                    <span class="price">$9.99</span>
+                </div>
+                <div class="menu-item veg">
+                    <img src="images/p14.jpg" alt="Peppy Paneer Pizza">
+                    <h3>Peppy Paneer Pizza</h3>
+                    <p>Chunky paneer with crisp capsicum and spicy red pepper - quite a mouthful!</p>
+                    <span class="price">$9.99</span>
+                </div>
+                <div class="menu-item veg">
+                    <img src="images/p13.jpg" alt="Veg Extravaganz Pizza">
+                    <h3>Veg Extravaganz Pizza</h3>
+                    <p>A pizza that decidedly staggers under an overload of golden corn, exotic black olives, crunchy onions, crisp capsicum, succulent mushrooms, juicyfresh tomatoes and jalapeno - with extra cheese to go all around.</p>
+                    <span class="price">$9.99</span>
+                </div>
+                <div class="menu-item veg">
+                    <img src="images/p12.jpg" alt="Deluxe Veggie Pizza">
+                    <h3>Deluxe Veggie Pizza</h3>
+                    <p>For a vegetarian looking for a BIG treat that goes easy on the spices, this one's got it all.. The onions, the capsicum, those delectable mushrooms - with paneer and golden corn to top it all.</p>
+                    <span class="price">$9.99</span>
+                </div>
+                <div class="menu-item veg">
+                    <img src="images/p17.jpg" alt="Double Cheese Margherita Pizza">
+                    <h3>Double Cheese Margherita Pizza</h3>
+                    <p>The ever-popular Margherita - loaded with extra cheese... oodies of it!</p>
+                    <span class="price">$9.99</span>
+                </div>
+                <div class="menu-item veg">
+                    <img src="images/p16.jpg" alt="Cheese N Corn Pizza">
+                    <h3>Cheese N Corn Pizza</h3>
+                    <p>Cheese I Golden Corn | Cheese n Corn Pizza</p>
+                    <span class="price">$9.99</span>
+                </div>
+                <div class="menu-item veg">
+                    <img src="images/p12.jpg" alt="Veggie Paradise Pizza">
+                    <h3>Veggie Paradise Pizza</h3>
+                    <p>Goldern Corn, Black Olives, Capsicum & Red Paprika</p>
+                    <span class="price">$9.99</span>
+                </div>
+                <!-- Non-Veg Pizza Item -->
+                <div class="menu-item nonveg">
+                    <img src="images/p4.jpg" alt="Pepperoni Pizza">
+                    <h3>Pepperoni Pizza</h3>
+                    <p>A fan favorite loaded with pepperoni and mozzarella cheese.</p>
+                    <span class="price">$12.99</span>
+                </div>
+                <!-- Special Pizza Item -->
+                <div class="menu-item special">
+                    <img src="images/p7.jpg" alt="BBQ Chicken Pizza">
+                    <h3>BBQ Chicken Pizza</h3>
+                    <p>Grilled chicken, BBQ sauce, onions, and a blend of cheeses.</p>
+                    <span class="price">$14.99</span>
+                </div>
+                <div class="menu-item special">
+                    <img src="images/p18.jpg" alt="Cheese Overload Pizza">
+                    <h3>Cheese Overload Pizza</h3>
+                    <p>For cheese lovers, loaded with multiple cheese layers!</p>
+                    <span class="price">$14.99</span>
+                </div>
+                <!-- Additional Menu Items -->
+                <div class="menu-item veg">
+                    <img src="images/p5.jpg" alt="Veggie Delight Pizza">
+                    <h3>Veggie Delight Pizza</h3>
+                    <p>A colorful blend of fresh veggies with a rich tomato base.</p>
+                    <span class="price">$10.99</span>
+                </div>
+                <div class="menu-item nonveg">
+                    <img src="images/p11.jpg" alt="Meat Lover's Pizza">
+                    <h3>Meat Lover's Pizza</h3>
+                    <p>A pizza loaded with a variety of meats and melted cheese.</p>
+                    <span class="price">$15.99</span>
+                </div>
+            </div>
+        </section>
+    
+        <script>
+            function showCategory(category) {
+                var items = document.querySelectorAll('.menu-item');
+                var buttons = document.querySelectorAll('.category-btn');
+    
+                buttons.forEach(function(btn) {
+                    btn.classList.remove('active');
+                });
+    
+                if (category === 'all') {
+                    items.forEach(function(item) {
+                        item.style.display = 'block';
+                    });
+                } else {
+                    items.forEach(function(item) {
+                        if (item.classList.contains(category)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                }
+    
+                document.querySelector(`[onclick="showCategory('${category}')"]`).classList.add('active');
+            }
+        </script>
+
+            <!-- Contact Us Section -->
+    <section class="contact-section" id="contact">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Fill out the form below or reach out to us directly.</p>
+        
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Email: support@pizzahub.com</p>
+                <p>Phone: +1 234 567 890</p>
+                <p>Address: 123 Pizza Street, Foodie City, USA</p>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn-send">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+            <!-- Newsletter & Subscription Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <h2>Join Our Pizza Lovers Club</h2>
+            <p>Subscribe to our newsletter and be the first to know about special offers, new pizzas, and exclusive deals!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn-subscribe">Subscribe Now</button>
+            </form>
+        </div>
+    </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-section">
+            <div class="footer-container">
+                <!-- Footer Logo and Description -->
+                <div class="footer-about">
+                    <h3>Pizza Hub</h3>
+                    <p>Your go-to place for delicious and freshly baked pizzas. We deliver the best pizzas in town right to your door!</p>
+                </div>
+    
+                <!-- Footer Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#special-offers">Special Offers</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Footer Contact Info -->
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>Email: support@pizzahub.com</p>
+                    <p>Phone: +1 234 567 890</p>
+                    <p>Address: 123 Pizza Street, Foodie City, USA</p>
+                </div>
+    
+                <!-- Footer Social Icons -->
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pizza Hub. All rights reserved.</p>
+            </div>
+        </footer>
+</body>
+</html>

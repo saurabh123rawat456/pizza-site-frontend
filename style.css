@@ -1,0 +1,734 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark Theme Background */
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #e63946;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #e63946;
+}
+
+/* Order Button in Navbar */
+.btn-order {
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-order:hover {
+    background-color: #ff7f7f;
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: url('images/p3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Call to Action Button */
+.btn-cta {
+    padding: 15px 30px;
+    background-color: #e63946;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: #ff7f7f;
+}
+/* Section Title */
+.featured-pizzas h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 50px 0;
+    color: #e63946;
+}
+
+/* Featured Pizzas Grid */
+.pizzas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.pizza-item {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pizza-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(230, 57, 70, 0.2);
+}
+
+/* Pizza Item Content */
+.pizza-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.pizza-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.pizza-item p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #d3d3d3;
+}
+
+.pizza-item .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Order Button */
+.btn-order {
+    padding: 10px 20px;
+    background-color: #e63946;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn-order:hover {
+    background-color: #ff7f7f;
+}
+/* Section Title */
+.special-offers h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 50px 0;
+    color: #e63946;
+}
+.special-offers{
+    margin-bottom: 5%;
+}
+/* Special Offers Grid */
+.offers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.offer-item {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(230, 57, 70, 0.2);
+}
+
+/* Offer Item Content */
+.offer-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffcc00;
+}
+
+.offer-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #d3d3d3;
+}
+
+/* Claim Offer Button */
+.btn-claim {
+    padding: 12px 25px;
+    background-color: #e63946;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(230, 57, 70, 0.4);
+}
+
+.btn-claim:hover {
+    background-color: #ff7f7f;
+}
+/* About Us Section */
+.about-us {
+    background-color: #1f1f1f;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    color: #e63946;
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #d3d3d3;
+}
+
+.about-us strong {
+    color: #e63946;
+    font-weight: bold;
+}
+
+/* Learn More Button */
+.btn-learn-more {
+    padding: 12px 25px;
+    background-color: #e63946;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background-color: #ff7f7f;
+}
+/* Customer Reviews Section */
+.customer-reviews {
+    background-color: #1f1f1f;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.customer-reviews h2 {
+    font-size: 36px;
+    color: #e63946;
+    margin-bottom: 40px;
+}
+
+/* Reviews Grid */
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Review Item */
+.review-item {
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(230, 57, 70, 0.2);
+}
+
+/* Review Text */
+.review-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #d3d3d3;
+    font-style: italic;
+}
+
+/* Customer Name */
+.customer-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e63946;
+}
+/* Section Title */
+.menu-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 50px 0;
+    color: #e63946;
+}
+
+/* Menu Categories */
+.menu-categories {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.category-btn {
+    padding: 10px 20px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.category-btn.active, .category-btn:hover {
+    background-color: #e63946;
+    color: #ffffff;
+}
+
+/* Menu Items Grid */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Menu Item */
+.menu-item {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(230, 57, 70, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #e63946;
+}
+
+.menu-item p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #d3d3d3;
+}
+
+.menu-item .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e63946;
+}
+/* Newsletter Section Styling */
+.newsletter-section {
+    background-color: #1f1f1f;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+    box-shadow: 0px 8px 15px rgba(230, 57, 70, 0.2);
+}
+
+.newsletter-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #e63946;
+}
+
+.newsletter-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #d3d3d3;
+}
+
+/* Newsletter Form Styling */
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    width: 300px;
+    background-color: #ffffff;
+    color: #121212;
+    transition: box-shadow 0.3s ease;
+}
+
+.newsletter-form input[type="email"]:focus {
+    box-shadow: 0px 0px 10px rgba(230, 57, 70, 0.6);
+}
+
+/* Subscribe Button Styling */
+.btn-subscribe {
+    padding: 15px 30px;
+    background-color: #e63946;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-subscribe:hover {
+    background-color: #ff7f7f;
+    box-shadow: 0px 5px 15px rgba(230, 57, 70, 0.4);
+}
+/* Footer Section */
+.footer-section {
+    background-color: #1f1f1f;
+    padding: 40px 20px;
+    color: #d3d3d3;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+/* Footer About Section */
+.footer-about h3 {
+    font-size: 24px;
+    color: #e63946;
+    margin-bottom: 15px;
+}
+
+.footer-about p {
+    font-size: 16px;
+    color: #d3d3d3;
+    line-height: 1.6;
+}
+
+/* Footer Links */
+.footer-links h4 {
+    font-size: 20px;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #e63946;
+}
+
+/* Footer Contact Info */
+.footer-contact h4 {
+    font-size: 20px;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #d3d3d3;
+}
+
+/* Footer Social Icons */
+.footer-social h4 {
+    font-size: 20px;
+    color: #e63946;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #e63946;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333333;
+    color: #d3d3d3;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #d3d3d3;
+}
+/* Contact Section */
+.contact-section {
+    background-color: #1f1f1f;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+    box-shadow: 0px 8px 15px rgba(230, 57, 70, 0.2);
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #e63946;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #d3d3d3;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Contact Information */
+.contact-info h3 {
+    font-size: 28px;
+    color: #e63946;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #d3d3d3;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    color: #121212;
+    transition: box-shadow 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    box-shadow: 0px 0px 10px rgba(230, 57, 70, 0.6);
+}
+
+/* Send Button */
+.btn-send {
+    padding: 15px;
+    background-color: #e63946;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-send:hover {
+    background-color: #ff7f7f;
+    box-shadow: 0px 5px 15px rgba(230, 57, 70, 0.4);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-section h1 {
+        font-size: 36px;
+    }
+    .hero-section p {
+        font-size: 18px;
+    }
+    .pizza-item h3 {
+        font-size: 20px;
+    }
+    .pizza-item p {
+        font-size: 14px;
+    }
+    .offer-item h3 {
+        font-size: 20px;
+    }
+    .offer-item p {
+        font-size: 14px;
+    }
+    .about-us h2 {
+        font-size: 30px;
+    }
+    .about-us p {
+        font-size: 16px;
+    }
+    .customer-reviews h2 {
+        font-size: 30px;
+    }
+
+    .review-text {
+        font-size: 16px;
+    }
+
+    .customer-name {
+        font-size: 14px;
+    }
+    .menu-item h3 {
+        font-size: 20px;
+    }
+
+    .menu-item p {
+        font-size: 14px;
+    }
+    .newsletter-section h2 {
+        font-size: 28px;
+    }
+
+    .newsletter-section p {
+        font-size: 16px;
+    }
+
+    .newsletter-form input[type="email"] {
+        width: 100%;
+    }
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-about h3,
+    .footer-links h4,
+    .footer-contact h4,
+    .footer-social h4 {
+        font-size: 18px;
+    }
+
+    .footer-about p,
+    .footer-contact p,
+    .footer-links ul li,
+    .footer-social a {
+        font-size: 14px;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-info h3 {
+        font-size: 24px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+}
